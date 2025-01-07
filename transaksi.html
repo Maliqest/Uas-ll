@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Transaksi</title>
+    <link rel="stylesheet" href="trans.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Transaksi</h1>
+        <form id="transaction-form">
+            <div class="input-box">
+                <label for="nama-transaksi">Nama Transaksi</label>
+                <input type="text" id="nama-transaksi" placeholder="Masukkan nama transaksi" required>
+            </div>
+            <div class="input-box">
+                <label for="jumlah">Jumlah</label>
+                <input type="number" id="jumlah" placeholder="Masukkan jumlah" required>
+            </div>
+            <div class="input-box">
+                <label for="kategori">Kategori</label>
+                <select id="kategori" required>
+                    <option value="">Pilih Kategori</option>
+                    <option value="Buku anak-anak">Buku anak-anak</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Fantasy">Fantasy</option>
+                </select>
+            </div>
+            <button type="submit">Simpan</button>
+        </form>
+        <a href="daftar_transaksi.html">Lihat Daftar Transaksi</a>
+        <br>
+        <a href="index.html">Kembali ke Website utama</a>
+    </div>
+</body>
+<script src="data.js"></script>
+</html>
